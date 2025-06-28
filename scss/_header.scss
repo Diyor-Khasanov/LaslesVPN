@@ -1,0 +1,36 @@
+.header {
+  padding: 1.5rem 0;
+
+  .navbar {
+    @include flex(row, space-between, center);
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    .nav-links {
+      @include flex();
+
+      li {
+        margin: 0 1rem;
+      }
+
+      @include responsive("mobile") {
+        display: none;
+      }
+    }
+
+    .nav-actions {
+      @include flex();
+
+      a {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

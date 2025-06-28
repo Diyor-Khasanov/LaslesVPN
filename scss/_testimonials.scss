@@ -1,0 +1,30 @@
+.testimonials {
+  text-align: center;
+  padding: 4rem 0;
+
+  .testimonial-slider {
+    margin-top: 2rem;
+
+    .testimonial-slide {
+      display: none;
+
+      &.active {
+        display: block;
+        animation: fadeInUp 1s ease forwards;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .testimonial-controls {
+    margin-top: 2rem;
+
+    button {
+      @include button-style;
+      margin: 0 0.5rem;
+    }
+  }
+}

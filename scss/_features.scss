@@ -1,0 +1,42 @@
+.features {
+  @include flex(row, space-between, center);
+  padding: 4rem 0;
+
+  .features-image {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .features-content {
+    max-width: 50%;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: $text-color;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      li {
+        margin-bottom: 0.5rem;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
+
+  @include responsive("mobile") {
+    @include flex(column, center, center);
+    text-align: center;
+
+    .features-content {
+      max-width: 100%;
+    }
+  }
+}
