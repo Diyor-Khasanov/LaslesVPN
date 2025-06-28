@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: #fff;
   color: #0b132a;
 }
@@ -34,27 +35,35 @@ h4 {
 .btn {
   background-color: #f53838;
   color: #fff;
-  padding: 0.75rem 2rem;
+  padding: 15px 70px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
+  -webkit-box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
+  -moz-box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
 }
 .btn:hover {
   opacity: 0.9;
+  box-shadow: none;
 }
 
 .btn-primary {
   background-color: #f53838;
   color: #fff;
-  padding: 0.75rem 2rem;
+  padding: 15px 70px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
+  -webkit-box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
+  -moz-box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
 }
 .btn-primary:hover {
   opacity: 0.9;
+  box-shadow: none;
 }
 
 @keyframes fadeInUp {
@@ -95,6 +104,10 @@ h4 {
 }
 .header .navbar .nav-links li {
   margin: 0 1rem;
+}
+.header .navbar .nav-links li:hover {
+  color: #f53838;
+  transition: all 0.3s ease;
 }
 @media (max-width: 768px) {
   .header .navbar .nav-links {
@@ -245,9 +258,23 @@ h4 {
   text-align: center;
   padding: 4rem 0;
 }
-.map img {
+.map .map-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.map .map-wrapper .map-image {
   max-width: 100%;
-  margin-top: 2rem;
+  display: block;
+}
+.map .map-wrapper .location-icon {
+  position: absolute;
+  width: 30px;
+  transition: all 6s linear;
+}
+@media (max-width: 768px) {
+  .map .map-wrapper .location-icon {
+    width: 20px;
+  }
 }
 
 .testimonials {
@@ -273,24 +300,28 @@ h4 {
 .testimonials .testimonial-controls button {
   background-color: #f53838;
   color: #fff;
-  padding: 0.75rem 2rem;
+  padding: 15px 70px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
+  -webkit-box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
+  -moz-box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
   margin: 0 0.5rem;
 }
 .testimonials .testimonial-controls button:hover {
   opacity: 0.9;
+  box-shadow: none;
 }
 
 .subscribe {
-  background-color: #f53838;
-  color: #fff;
+  background-color: #fff;
   padding: 3rem 2rem;
   text-align: center;
   border-radius: 15px;
   margin: 4rem 0;
+  box-shadow: 0 4px 27px rgba(0, 0, 0, 0.1);
 }
 .subscribe h2 {
   margin-bottom: 1rem;
@@ -317,6 +348,8 @@ h4 {
 }
 .footer .footer-content .socials {
   margin-top: 1rem;
+  display: flex;
+  align-items: center;
 }
 .footer .footer-content .socials a {
   margin-right: 1rem;
@@ -414,4 +447,19 @@ h4 {
     width: 100%;
     margin-bottom: 2rem;
   }
+}
+
+.btn-primary-rounded {
+  padding: 12px 30px;
+  font-weight: 500;
+  border: 1px solid #f53838;
+  background: white;
+  color: #f53838;
+  border-radius: 40px;
+  font-size: 16px;
+}
+.btn-primary-rounded:hover {
+  transition: all 0.3s ease;
+  background: #f53838;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

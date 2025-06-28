@@ -1,10 +1,11 @@
 .subscribe {
-  background-color: $primary-color;
-  color: #fff;
+  background-color: #fff;
+  // color: #fff;
   padding: 3rem 2rem;
   text-align: center;
   border-radius: 15px;
   margin: 4rem 0;
+  box-shadow: 0 4px 27px rgba(0, 0, 0, 0.1);
 
   h2 {
     margin-bottom: 1rem;

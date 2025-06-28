@@ -18,6 +18,9 @@
 
     .socials {
       margin-top: 1rem;
+      display: flex;
+      // gap: 5px;
+      align-items: center;
 
       a {
         margin-right: 1rem;

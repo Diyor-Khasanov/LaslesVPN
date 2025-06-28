@@ -18,6 +18,11 @@
 
       li {
         margin: 0 1rem;
+
+        &:hover {
+          color: $primary-color;
+          transition: $transition;
+        }
       }
 
       @include responsive("mobile") {

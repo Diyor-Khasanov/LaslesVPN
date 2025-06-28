@@ -20,13 +20,17 @@
 @mixin button-style {
   background-color: $primary-color;
   color: #fff;
-  padding: 0.75rem 2rem;
+  padding: 15px 70px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: $transition;
+  box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
+  -webkit-box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
+  -moz-box-shadow: 5px 10px 5px 0px rgba(245, 56, 56, 0.75);
 
   &:hover {
     opacity: 0.9;
+    box-shadow: none;
   }
 }
